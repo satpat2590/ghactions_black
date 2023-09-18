@@ -26,6 +26,7 @@ jobs:
       # Run the 'black' code formatter on all of the Python files in root and subdirectories. 
       - name: Test this application 
         run: |
-          find . -name "*.py" -exec black --check {} \; 
-          EXIT_CODE=$?
-          echo $EXIT_CODE
+          FILES=$(find . -name "*.py")
+          for file in $FILES; do
+            black --check $file || exit 1 
+          
