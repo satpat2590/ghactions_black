@@ -30,4 +30,5 @@ jobs:
           for file in $FILES; do
             echo -e "Checking $file...\n"
             black --check $file || exit 1 
+          done
 
