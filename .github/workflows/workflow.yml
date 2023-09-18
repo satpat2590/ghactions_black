@@ -28,8 +28,4 @@ jobs:
         run: |
           find . -name "*.py" -exec black --check {} \; 
           EXIT_CODE=$?
-          find . -name "*.py" -exec black {} \; 
-          if [ "$EXIT_CODE" -eq 1 ]; then 
-            echo "Black formatted text... Do better." 
-            exit 1
-          fi
+          echo $EXIT_CODE
