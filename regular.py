@@ -9,6 +9,6 @@ for key, val in mapping.items():
         print(val)
 
 
-vals = [1, 2, 3, 4, 5, 6, 3, 4, 5, 3, 65, 56, 78, 7, 8, 9]
+vals = [1, 2, 3, 4, 5,6,3,4,5,3,65,56,78,7,8,9]
 
 print([x for x in vals if x % 2 == 1])
