@@ -36,4 +36,3 @@ dict = Dict()
 dictionary = {"hello": 4, "world": "Jacobi", "I": 1, "am": 2, "Martha": 3}
 dict.sum_of_values(dictionary)
 dict.sort_keys(dictionary)
-
